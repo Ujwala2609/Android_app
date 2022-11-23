@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".StudentLogin">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/hang_lett"
+        android:text="STUDENT LOGIN"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:background="@drawable/layout_bg"
+        android:hint="@string/username"
+        android:textColorHint="@color/grey"
+        app:boxBackgroundMode="outline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username2"
+            android:textColor="@color/black"
+            android:layout_width="145dp"
+            android:layout_height="112dp"
+            android:background="@color/white"
+            android:fontFamily="@font/newbaske"
+            android:textSize="22dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        app:boxBackgroundMode="outline"
+        android:hint="@string/password"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password2"
+            android:layout_width="145dp"
+            android:layout_height="112dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:fontFamily="@font/newbaske"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="252dp"
+        android:layout_height="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login_student" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/submit_button_student_login2"
+        android:layout_width="285dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574"
+        app:lottie_rawRes="@raw/submit_se" />
+</androidx.constraintlayout.widget.ConstraintLayout>

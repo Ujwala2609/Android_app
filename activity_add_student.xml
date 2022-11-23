@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".addStudent">
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st1"
+      android:layout_width="312dp"
+      android:textSize="15dp"
+      android:layout_height="50dp"
+      android:background="@drawable/layout_bg"
+      android:hint="                              Name"
+      android:textColorHint="@color/grey"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.1"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:id="@+id/name_student"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st2"
+      android:layout_width="312dp"
+      android:textColorHint="@color/grey"
+      android:layout_height="50dp"
+      android:background="@drawable/layout_bg"
+      android:hint="                              Phone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.2"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:id="@+id/phone_student"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st3"
+      android:layout_width="312dp"
+      android:layout_height="50dp"
+      android:textColorHint="@color/grey"
+      android:background="@drawable/layout_bg"
+      android:hint="                              E-Mail"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.3"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:textColor="@color/black"
+        android:id="@+id/email_student"
+        android:textSize="15dp"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st6"
+      android:layout_width="312dp"
+      android:layout_height="50dp"
+      android:textColorHint="@color/grey"
+      android:background="@drawable/layout_bg"
+      android:hint="                              Class"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.5"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:id="@+id/class_student"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st7"
+      android:textColorHint="@color/grey"
+      android:layout_width="312dp"
+      android:layout_height="50dp"
+      android:background="@drawable/layout_bg"
+      android:hint="                         Class Teacher"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.6"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:textColor="@color/black"
+        android:id="@+id/teacher_student"
+        android:background="@color/white"
+        android:textSize="15dp"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st8"
+      android:textColorHint="@color/grey"
+      android:layout_width="312dp"
+      android:layout_height="50dp"
+      android:background="@drawable/layout_bg"
+      android:hint="                         Address"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.7"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:id="@+id/address_student"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/student_submit"
+      android:layout_width="164dp"
+      android:layout_height="51dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.991"
+      app:lottie_rawRes="@raw/submit_se" />
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="89dp"
+      android:layout_height="54dp"
+      android:text=" Gender"
+      android:textColor="@color/white"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.316"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.893" />
+
+  <RadioGroup
+      android:layout_width="138dp"
+      android:layout_height="97dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.739"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.886">
+
+    <RadioButton
+        android:id="@+id/stud_gen_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textColor="@color/white" />
+
+    <RadioButton
+        android:id="@+id/stud_gen_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textColor="@color/white" />
+  </RadioGroup>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/st5"
+      android:textColorHint="@color/grey"
+      android:layout_width="312dp"
+      android:layout_height="50dp"
+      android:background="@drawable/layout_bg"
+      android:hint="                       DOB   DD/MM/YYYY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.4"
+      >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="300dp"
+        android:textSize="15dp"
+        android:inputType="date"
+        android:id="@+id/dob_student"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

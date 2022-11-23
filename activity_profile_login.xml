@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileLogin">
+
+    <TextView
+        android:id="@+id/entertitle"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/hang_lett"
+        android:text="ENTER THE NAME"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        app:boxBackgroundMode="outline"
+        android:hint="NAME"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gggg"
+            android:layout_width="145dp"
+            android:layout_height="112dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:fontFamily="@font/newbaske" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/submit_button_student_profile"
+        android:layout_width="285dp"
+        android:layout_height="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574"
+        app:lottie_rawRes="@raw/submit_se" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
